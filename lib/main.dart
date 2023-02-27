@@ -1,7 +1,9 @@
 import 'package:coba_lokapin/bottomNavBarController/bottomNavBarController.dart';
+import 'package:coba_lokapin/onBoardingPage/onBoardingPage.dart';
 import 'package:coba_lokapin/signInUpPage/signInPage.dart';
 import 'package:coba_lokapin/signInUpPage/signUpPage.dart';
 import 'package:coba_lokapin/signInUpPage/splashScreenPage.dart';
+
 import 'package:flutter/material.dart';
 
 void main () => runApp(myApp());
@@ -23,6 +25,7 @@ class _myAppState extends State<myApp> {
         '/signInPage': (context) => signInPage(),
         '/signUpPage' : (context) => signUpPage(),
         '/mainPage' : (context) => mainPage(),
+        '/onBoardingPage' : (context) => OnBoardingPage(),
 
       },
     );

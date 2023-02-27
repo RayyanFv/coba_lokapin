@@ -14,22 +14,22 @@ class _splashScreenPageState extends State<splashScreenPage> {
 
   void initState(){
     Timer(Duration(seconds: 3),
-            ()=> Navigator.of(context).pushNamed('/signInPage'),
+            ()=> Navigator.of(context).pushNamed('/onBoardingPage'),
     );
     super.initState();
   }
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              height: 140,
+              height: 70,
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage('assets/logoLokapin.png')),
+                image: DecorationImage(image: AssetImage('assets/splashScreenLogo.png')),
               ),
             )
           ],
